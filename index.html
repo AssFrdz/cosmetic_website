@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+   <title>Cosmetic website</title>
+
+   <style>
+    *{
+        font-family: 'Inter';
+    }
+   </style>
+</head>
+<body>
+<header class="fixed bg-white w-screen flex justify-between items-center p-4 uppercase">
+    <span class="uppercase font-bold text-lg">Sekkisie</span>
+
+    <nav class="flex gap-2 text-xs">
+        <a href="#about">About</a>
+        <a href="#story">story</a>
+        <a href="#products">products</a>
+        <a href="#news">news</a>
+        <a href="#shop">shop</a>
+        <a href="#testimonial">testimonial</a>
+        <a href="#cases">cases</a>
+    </nav>
+
+    <div>
+        <button class="text-xs uppercase text-white bg-[#62A4A7] p-4">Online store</button>
+        <button id="burger"><i class="fa-solid fa-bars"></i></button>
+    </div>
+</header>
+
+
+<main class="pt-24">
+
+    <section id="home" class="h-screen w-screen bg-cover bg-[url(https://images.pexels.com/photos/11935613/pexels-photo-11935613.jpeg)]">
+
+        <div class="py-8 px-32 flex justify-between w-full">
+            <span class="text-black font-bold  text-[5rem]">SEKKISI</span> 
+            <p class="text-white text-2xl">"Bring clarity to everyone <br> with the power of plants."</p>
+        </div>
+
+
+        <div class="flex ml-16 mt-16 bg-white w-fit p-8 rounded-xl">
+            <div class="flex flex-col justify-between">
+                <div>
+                    <span class="text-xs bg-[#D9D9D9] px-4 py-2 rounded-2xl">Sale</span>
+                    <span class="text-xs bg-[#D9D9D9] px-4 py-2 rounded-2xl">Best</span>
+                </div>
+
+                <div class="mb-8 max-w-[15rem]">
+                    <span class="text-2xl font-bold">UV Essence gel</span>
+                    <p class="text-xs">Smoothly spreads, pops, moiturizes skin, UV gel gives</p>
+                </div>
+                <div><span class="font-bold text-2xl">$30</span> <span>/$50</span> <span class="text-xs bg-[#D9D9D9] px-4 py-2 rounded-2xl">sunscreen</span></div>
+            </div>
+
+            <img class="w-[10rem]" src="https://images.pexels.com/photos/7615877/pexels-photo-7615877.jpeg" alt="">
+        </div>
+
+
+    </section>
+
+    <div class="my-16 w-screen justify-center gap-8 h-[3rem] flex">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Amazon_2024.svg/640px-Amazon_2024.svg.png" alt="">
+        <img  src="data:image/webp;base64,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" alt="">
+        <img  src="https://logos-world.net/wp-content/uploads/2020/12/Etsy-Logo.png" alt="">
+        <img  src="https://freelogopng.com/images/all_img/1655830761shopify-logo-png.png" alt="">
+        <img  src="https://tse4.mm.bing.net/th/id/OIP.hN-TY6kQ9Y2Sf00RKcF3QwHaCK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+        <img  src="https://cdn.freebiesupply.com/logos/large/2x/woocommerce-logo-png-transparent.png" alt="">
+    </div>
+
+    <section class="h-screen flex items-center justify-end bg-contain bg-[url(https://images.pexels.com/photos/11935670/pexels-photo-11935670.jpeg)]" id="products">
+        <div class="rounded-xl mr-8 h-fit max-w-[35%] p-4 bg-white">
+            <span class="capitalize font-medium text-2xl">Experience the perfect blend pf nature and science with sekkiese skincare</span>
+            <p class="mb-2 text-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus voluptatem excepturi, quas ipsum quae blanditiis deleniti vitae non, repellat accusamus voluptatibus</p>
+            <div class="flex gap-4 w-full ">
+                <div class="flex flex-col justify-between h-[20rem] w-[50%] bg-contain bg-[url(https://images.pexels.com/photos/30835429/pexels-photo-30835429.jpeg)]">
+                    
+                    <div class="w-full flex justify-end p-2">
+                    <button class="p-2 w-fit backdrop-blur-xl  rounded-full"><i class=" text-white fa-solid fa-bag-shopping"></i></button>
+                    </div>
+                    <div class="m-2 flex items-end justify-between">
+                        <button class="flex gap-4 items-center justify-between text-xs backdrop-blur-xl text-white px-4 py-2 rounded-full"><span class="uppercase">buy now</span> <div class="p-2 bg-white rounded-full"><i class="text-black rounded-full fa-solid fa-arrow-right"></i></div></button>
+                        <span class="text-xs h-fit bg-black text-white px-4 py-2 rounded-2xl">$23,00</span>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-between h-[20rem] w-[50%] bg-contain bg-[url(https://images.pexels.com/photos/30835429/pexels-photo-30835429.jpeg)]">
+                    
+                    <div class="w-full flex justify-end p-2">
+                    <button class="p-2 w-fit backdrop-blur-xl  rounded-full"><i class=" text-white fa-solid fa-bag-shopping"></i></button>
+                    </div>
+                    <div class="m-2 flex items-end justify-between">
+                        <button class="flex gap-4 items-center justify-between text-xs backdrop-blur-xl text-white px-4 py-2 rounded-full"><span class="uppercase">buy now</span> <div class="p-2 bg-white rounded-full"><i class="text-black rounded-full fa-solid fa-arrow-right"></i></div></button>
+                        <span class="text-xs h-fit bg-black text-white px-4 py-2 rounded-2xl">$23,00</span>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="w-full uppercase bg-[#62A4A7] text-white p-4 my-2">Explore product</button>
+        </div>
+    </section>
+
+    <section id="bestselling" class="w-screen min-h-screen flex flex-col">
+        <span class="text-[#646363] uppercase text-sm mt-8 mx-auto">best-selling products</span>
+
+        <span class="text-2xl font-bold w-[25rem] text-center my-8 mx-auto capitalize">Out most loved products : discover sekkies's Best-Sellers</span>
+
+        <div class="w-screen p-8 flex flex-wrap gap-4 justify-center">
+
+            <div class="max-w-[23rem] flex flex-col gap-2">
+                 <div class="w-full rounded-xs flex flex-col justify-between h-[20rem] w-[50%] bg-contain bg-[url(https://images.pexels.com/photos/30835429/pexels-photo-30835429.jpeg)]">
+                    
+                    <div class="w-full flex justify-end p-2">
+                    <button class="p-2 w-fit backdrop-blur-xl  rounded-full"><i class=" text-white fa-solid fa-bag-shopping"></i></button>
+                    </div>
+                    <div class="m-2 flex items-end justify-between">
+                        <button class="flex gap-4 items-center justify-between text-xs backdrop-blur-xl text-white px-4 py-2 rounded-full"><span class="uppercase">buy now</span> <div class="p-2 bg-white rounded-full"><i class="text-black rounded-full fa-solid fa-arrow-right"></i></div></button>
+                        <span class="text-xs h-fit bg-black text-white px-4 py-2 rounded-2xl">$23,00</span>
+                    </div>
+                </div>
+
+                <div class="p-2 rounded-xs bg-[#D9D9D9] w-full flex justify-between">
+                    
+                    <div class="flex flex-col">
+                    <span class="font-medium text-xs">Clear Treatment Essence</span>
+                    <span class="text-xs">Skin Care</span>
+                    </div>
+                    <span class="text-xs text-right">60ML</span>
+
+                </div>
+            </div>
+
+            <div class="max-w-[23rem] flex flex-col gap-2">
+                 <div class="w-full rounded-xs flex flex-col justify-between h-[20rem] w-[50%] bg-contain bg-[url(https://images.pexels.com/photos/30835429/pexels-photo-30835429.jpeg)]">
+                    
+                    <div class="w-full flex justify-end p-2">
+                    <button class="p-2 w-fit backdrop-blur-xl  rounded-full"><i class=" text-white fa-solid fa-bag-shopping"></i></button>
+                    </div>
+                    <div class="m-2 flex items-end justify-between">
+                        <button class="flex gap-4 items-center justify-between text-xs backdrop-blur-xl text-white px-4 py-2 rounded-full"><span class="uppercase">buy now</span> <div class="p-2 bg-white rounded-full"><i class="text-black rounded-full fa-solid fa-arrow-right"></i></div></button>
+                        <span class="text-xs h-fit bg-black text-white px-4 py-2 rounded-2xl">$23,00</span>
+                    </div>
+                </div>
+
+                <div class="p-2 rounded-xs bg-[#D9D9D9] w-full flex justify-between">
+                    
+                    <div class="flex flex-col">
+                    <span class="font-medium text-xs">Clear Treatment Essence</span>
+                    <span class="text-xs">Skin Care</span>
+                    </div>
+                    <span class="text-xs text-right">60ML</span>
+
+                </div>
+            </div>
+            <div class="max-w-[23rem] flex flex-col gap-2">
+                 <div class="w-full rounded-xs flex flex-col justify-between h-[20rem] w-[50%] bg-contain bg-[url(https://images.pexels.com/photos/30835429/pexels-photo-30835429.jpeg)]">
+                    
+                    <div class="w-full flex justify-end p-2">
+                    <button class="p-2 w-fit backdrop-blur-xl  rounded-full"><i class=" text-white fa-solid fa-bag-shopping"></i></button>
+                    </div>
+                    <div class="m-2 flex items-end justify-between">
+                        <button class="flex gap-4 items-center justify-between text-xs backdrop-blur-xl text-white px-4 py-2 rounded-full"><span class="uppercase">buy now</span> <div class="p-2 bg-white rounded-full"><i class="text-black rounded-full fa-solid fa-arrow-right"></i></div></button>
+                        <span class="text-xs h-fit bg-black text-white px-4 py-2 rounded-2xl">$23,00</span>
+                    </div>
+                </div>
+
+                <div class="p-2 rounded-xs bg-[#D9D9D9] w-full flex justify-between">
+                    
+                    <div class="flex flex-col">
+                    <span class="font-medium text-xs">Clear Treatment Essence</span>
+                    <span class="text-xs">Skin Care</span>
+                    </div>
+                    <span class="text-xs text-right">60ML</span>
+
+                </div>
+            </div>
+
+            <div class="max-w-[23rem] flex flex-col gap-2">
+                 <div class="w-full rounded-xs flex flex-col justify-between h-[20rem] w-[50%] bg-contain bg-[url(https://images.pexels.com/photos/30835429/pexels-photo-30835429.jpeg)]">
+                    
+                    <div class="w-full flex justify-end p-2">
+                    <button class="p-2 w-fit backdrop-blur-xl  rounded-full"><i class=" text-white fa-solid fa-bag-shopping"></i></button>
+                    </div>
+                    <div class="m-2 flex items-end justify-between">
+                        <button class="flex gap-4 items-center justify-between text-xs backdrop-blur-xl text-white px-4 py-2 rounded-full"><span class="uppercase">buy now</span> <div class="p-2 bg-white rounded-full"><i class="text-black rounded-full fa-solid fa-arrow-right"></i></div></button>
+                        <span class="text-xs h-fit bg-black text-white px-4 py-2 rounded-2xl">$23,00</span>
+                    </div>
+                </div>
+
+                <div class="p-2 rounded-xs bg-[#D9D9D9] w-full flex justify-between">
+                    
+                    <div class="flex flex-col">
+                    <span class="font-medium text-xs">Clear Treatment Essence</span>
+                    <span class="text-xs">Skin Care</span>
+                    </div>
+                    <span class="text-xs text-right">60ML</span>
+
+                </div>
+            </div>
+
+            <div class="max-w-[23rem] flex flex-col gap-2">
+                 <div class="w-full rounded-xs flex flex-col justify-between h-[20rem] w-[50%] bg-contain bg-[url(https://images.pexels.com/photos/30835429/pexels-photo-30835429.jpeg)]">
+                    
+                    <div class="w-full flex justify-end p-2">
+                    <button class="p-2 w-fit backdrop-blur-xl  rounded-full"><i class=" text-white fa-solid fa-bag-shopping"></i></button>
+                    </div>
+                    <div class="m-2 flex items-end justify-between">
+                        <button class="flex gap-4 items-center justify-between text-xs backdrop-blur-xl text-white px-4 py-2 rounded-full"><span class="uppercase">buy now</span> <div class="p-2 bg-white rounded-full"><i class="text-black rounded-full fa-solid fa-arrow-right"></i></div></button>
+                        <span class="text-xs h-fit bg-black text-white px-4 py-2 rounded-2xl">$23,00</span>
+                    </div>
+                </div>
+
+                <div class="p-2 rounded-xs bg-[#D9D9D9] w-full flex justify-between">
+                    
+                    <div class="flex flex-col">
+                    <span class="font-medium text-xs">Clear Treatment Essence</span>
+                    <span class="text-xs">Skin Care</span>
+                    </div>
+                    <span class="text-xs text-right">60ML</span>
+
+                </div>
+            </div>
+            <div class="max-w-[23rem] flex flex-col gap-2">
+                 <div class="w-full rounded-xs flex flex-col justify-between h-[20rem] w-[50%] bg-contain bg-[url(https://images.pexels.com/photos/30835429/pexels-photo-30835429.jpeg)]">
+                    
+                    <div class="w-full flex justify-end p-2">
+                    <button class="p-2 w-fit backdrop-blur-xl  rounded-full"><i class=" text-white fa-solid fa-bag-shopping"></i></button>
+                    </div>
+                    <div class="m-2 flex items-end justify-between">
+                        <button class="flex gap-4 items-center justify-between text-xs backdrop-blur-xl text-white px-4 py-2 rounded-full"><span class="uppercase">buy now</span> <div class="p-2 bg-white rounded-full"><i class="text-black rounded-full fa-solid fa-arrow-right"></i></div></button>
+                        <span class="text-xs h-fit bg-black text-white px-4 py-2 rounded-2xl">$23,00</span>
+                    </div>
+                </div>
+
+                <div class="p-2 rounded-xs bg-[#D9D9D9] w-full flex justify-between">
+                    
+                    <div class="flex flex-col">
+                    <span class="font-medium text-xs">Clear Treatment Essence</span>
+                    <span class="text-xs">Skin Care</span>
+                    </div>
+                    <span class="text-xs text-right">60ML</span>
+
+                </div>
+            </div>
+            <div class="max-w-[23rem] flex flex-col gap-2">
+                 <div class="w-full rounded-xs flex flex-col justify-between h-[20rem] w-[50%] bg-contain bg-[url(https://images.pexels.com/photos/30835429/pexels-photo-30835429.jpeg)]">
+                    
+                    <div class="w-full flex justify-end p-2">
+                    <button class="p-2 w-fit backdrop-blur-xl  rounded-full"><i class=" text-white fa-solid fa-bag-shopping"></i></button>
+                    </div>
+                    <div class="m-2 flex items-end justify-between">
+                        <button class="flex gap-4 items-center justify-between text-xs backdrop-blur-xl text-white px-4 py-2 rounded-full"><span class="uppercase">buy now</span> <div class="p-2 bg-white rounded-full"><i class="text-black rounded-full fa-solid fa-arrow-right"></i></div></button>
+                        <span class="text-xs h-fit bg-black text-white px-4 py-2 rounded-2xl">$23,00</span>
+                    </div>
+                </div>
+
+                <div class="p-2 rounded-xs bg-[#D9D9D9] w-full flex justify-between">
+                    
+                    <div class="flex flex-col">
+                    <span class="font-medium text-xs">Clear Treatment Essence</span>
+                    <span class="text-xs">Skin Care</span>
+                    </div>
+                    <span class="text-xs text-right">60ML</span>
+
+                </div>
+            </div>
+            <div class="max-w-[23rem] flex flex-col gap-2">
+                 <div class="w-full rounded-xs flex flex-col justify-between h-[20rem] w-[50%] bg-contain bg-[url(https://images.pexels.com/photos/30835429/pexels-photo-30835429.jpeg)]">
+                    
+                    <div class="w-full flex justify-end p-2">
+                    <button class="p-2 w-fit backdrop-blur-xl  rounded-full"><i class=" text-white fa-solid fa-bag-shopping"></i></button>
+                    </div>
+                    <div class="m-2 flex items-end justify-between">
+                        <button class="flex gap-4 items-center justify-between text-xs backdrop-blur-xl text-white px-4 py-2 rounded-full"><span class="uppercase">buy now</span> <div class="p-2 bg-white rounded-full"><i class="text-black rounded-full fa-solid fa-arrow-right"></i></div></button>
+                        <span class="text-xs h-fit bg-black text-white px-4 py-2 rounded-2xl">$23,00</span>
+                    </div>
+                </div>
+
+                <div class="p-2 rounded-xs bg-[#D9D9D9] w-full flex justify-between">
+                    
+                    <div class="flex flex-col">
+                    <span class="font-medium text-xs">Clear Treatment Essence</span>
+                    <span class="text-xs">Skin Care</span>
+                    </div>
+                    <span class="text-xs text-right">60ML</span>
+
+                </div>
+            </div>
+            <div class="max-w-[23rem] flex flex-col gap-2">
+                 <div class="w-full rounded-xs flex flex-col justify-between h-[20rem] w-[50%] bg-contain bg-[url(https://images.pexels.com/photos/30835429/pexels-photo-30835429.jpeg)]">
+                    
+                    <div class="w-full flex justify-end p-2">
+                    <button class="p-2 w-fit backdrop-blur-xl  rounded-full"><i class=" text-white fa-solid fa-bag-shopping"></i></button>
+                    </div>
+                    <div class="m-2 flex items-end justify-between">
+                        <button class="flex gap-4 items-center justify-between text-xs backdrop-blur-xl text-white px-4 py-2 rounded-full"><span class="uppercase">buy now</span> <div class="p-2 bg-white rounded-full"><i class="text-black rounded-full fa-solid fa-arrow-right"></i></div></button>
+                        <span class="text-xs h-fit bg-black text-white px-4 py-2 rounded-2xl">$23,00</span>
+                    </div>
+                </div>
+
+                <div class="p-2 rounded-xs bg-[#D9D9D9] w-full flex justify-between">
+                    
+                    <div class="flex flex-col">
+                    <span class="font-medium text-xs">Clear Treatment Essence</span>
+                    <span class="text-xs">Skin Care</span>
+                    </div>
+                    <span class="text-xs text-right">60ML</span>
+
+                </div>
+            </div>
+            <div class="max-w-[23rem] flex flex-col gap-2">
+                 <div class="w-full rounded-xs flex flex-col justify-between h-[20rem] w-[50%] bg-contain bg-[url(https://images.pexels.com/photos/30835429/pexels-photo-30835429.jpeg)]">
+                    
+                    <div class="w-full flex justify-end p-2">
+                    <button class="p-2 w-fit backdrop-blur-xl  rounded-full"><i class=" text-white fa-solid fa-bag-shopping"></i></button>
+                    </div>
+                    <div class="m-2 flex items-end justify-between">
+                        <button class="flex gap-4 items-center justify-between text-xs backdrop-blur-xl text-white px-4 py-2 rounded-full"><span class="uppercase">buy now</span> <div class="p-2 bg-white rounded-full"><i class="text-black rounded-full fa-solid fa-arrow-right"></i></div></button>
+                        <span class="text-xs h-fit bg-black text-white px-4 py-2 rounded-2xl">$23,00</span>
+                    </div>
+                </div>
+
+                <div class="p-2 rounded-xs bg-[#D9D9D9] w-full flex justify-between">
+                    
+                    <div class="flex flex-col">
+                    <span class="font-medium text-xs">Clear Treatment Essence</span>
+                    <span class="text-xs">Skin Care</span>
+                    </div>
+                    <span class="text-xs text-right">60ML</span>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="min-h-screen w-screen flex items-center justify-center flex-col bg-cover bg-[url(https://images.pexels.com/photos/11935611/pexels-photo-11935611.jpeg)]">
+        
+        <div class="flex flex-col">
+            <span class="text-white uppercase text-sm mt-8 mx-auto">GALERY</span>
+        <span class="text-2xl text-white font-bold w-[25rem] text-center my-8 mx-auto capitalize">Our Most Loved Products: Discover Sekkiese's Best-Sellers</span>
+        <button class="text-white text-sm bg-[#62A4A7] w-fit m-auto uppercase p-4" >Explore gallery</button>
+
+        </div>
+    </section>
+</main>
+
+
+
+<footer class="bg-black text-white w-screen">
+
+    <div class="p-8 w-full flex justify-between">
+        <span class="uppercase font-bold text-[3.5rem]">Sekkisie</span>
+
+    <div>
+        <span>Join our newsletter to stay up to date</span>
+        <div class="m-4 rounded-full border border-[#D9D9D9] pl-4 ">
+            <input type="text" name="" id="" placeholder="Email adress">
+            <button class="bg-white text-black px-4 py-2 rounded-full" type="submit">Submit</button>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="flex justify-between px-16">
+        <div class="flex flex-col">
+            <span class="uppercase my-4">Navigations</span>
+
+            <a href="#about">About</a>
+            <a href="#story">story</a>
+            <a href="#products">products</a>
+            <a href="#news">news</a>
+            <a href="#shop">shop</a>
+            <a href="#testimonial">testimonial</a>
+            <a href="#cases">cases</a>
+        </div>
+
+        <div class="flex flex-col">
+            <span class="uppercase my-4">Collections</span>
+
+            <a href="#">Sekkiese Classic</a>
+            <a href="#">Sekkiese Supreme</a>
+            <a href="#">Sekkiese Excellent</a>
+            <a href="#">Clear Wellness</a>
+            <a href="#">Gifts</a>
+            <a href="#">View All</a>
+        </div>
+
+        <div class="flex flex-col">
+            <span class="uppercase my-4">Category</span>
+
+            <a href="#">Cream + Moisturizer</a>
+            <a href="#">Emulsion + Lotion</a>
+            <a href="#">Essence + Seru</a>
+            <a href="#">Cleansers</a>
+            <a href="#">Masks</a>
+            <a href="#">Eye Care</a>
+        </div>
+
+        <div class="flex flex-col">
+            <span class="uppercase my-4">Skin Type</span>
+
+            <a href="#">Normal</a>
+            <a href="#">Combination</a>
+            <a href="#">Essences + Serum</a>
+            <a href="#">DRY</a>
+            <a href="#">Oily</a>
+        </div>
+    </div>
+
+    <div class=" flex justify-between w-full p-4 text-[#D9D9D9] text-xs">
+        <div>
+            <a href="">Privacy Policy</a>
+            <a href="">Term Of Service</a>
+        </div>
+
+        <a href="">©️ 2023 Lumin.  All rights reserved.</a>
+    </div>
+
+</footer>
+
+    
+</body>
+</html>
