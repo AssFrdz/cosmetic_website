@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+   <title>Cosmetic website</title>
+
+   <style>
+    *{
+        font-family: 'Inter';
+    }
+   </style>
+</head>
+<body>
+<header>
+    <span>Sekkisie</span>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#story">story</a>
+        <a href="#products">products</a>
+        <a href="#news">news</a>
+        <a href="#shop">shop</a>
+        <a href="#testimonial">testimonial</a>
+        <a href="#cases">cases</a>
+    </nav>
+
+    <div>
+        <button>Online store</button>
+        <button id="burger"><i></i></button>
+    </div>
+</header>
+
+
+<main>
+
+    <section id="home">
+
+        <div>
+            <span>SEKKISI</span> 
+            <p>"Bring clarity to everyone <br> with the power of plants."</p>
+        </div>
+
+
+        <div>
+            <div>
+                <div>
+                    <span>Sale</span>
+                    <span>Best</span>
+                </div>
+
+                <div>
+                    <span>UV Essence gel</span>
+                    <p>Smoothly spreads, pops, moiturizes skin, UV gel gives</p>
+                </div>
+                <div><span>$30</span> <span>/$50</span> <span>sunscreen</span></div>
+            </div>
+
+            <img src="https://images.pexels.com/photos/7615877/pexels-photo-7615877.jpeg" alt="">
+        </div>
+
+
+    </section>
+
+    <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Amazon_2024.svg/640px-Amazon_2024.svg.png" alt="">
+        <img  src="data:image/webp;base64,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" alt="">
+        <img  src="https://logos-world.net/wp-content/uploads/2020/12/Etsy-Logo.png" alt="">
+        <img  src="https://freelogopng.com/images/all_img/1655830761shopify-logo-png.png" alt="">
+        <img  src="https://tse4.mm.bing.net/th/id/OIP.hN-TY6kQ9Y2Sf00RKcF3QwHaCK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+        <img  src="https://cdn.freebiesupply.com/logos/large/2x/woocommerce-logo-png-transparent.png" alt="">
+    </div>
+
+    <section id="products">
+        <div>
+            <span>Experience the perfect blend pf nature and science with sekkiese skincare</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus voluptatem excepturi, quas ipsum quae blanditiis deleniti vitae non, repellat accusamus voluptatibus</p>
+            <div>
+                <div>
+                    
+                    <div>
+                    <button><i></i></button>
+                    </div>
+                    <div>
+                        <button><span>buy now</span> <div><i></i></div></button>
+                        <span>$23,00</span>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div>
+                    <button><i></i></button>
+                    </div>
+                    <div>
+                        <button><span>buy now</span> <div><i></i></div></button>
+                        <span>$23,00</span>
+                    </div>
+                </div>
+                
+            </div>
+            <button>Explore product</button>
+        </div>
+    </section>
+
+    <section id="bestselling">
+        <span>best-selling products</span>
+
+        <span>Out most loved products : discover sekkies's Best-Sellers</span>
+
+        <div>
+
+            <div>
+                 <div>
+                    
+                    <div>
+                    <button><i></i></button>
+                    </div>
+                    <div>
+                        <button><span>buy now</span> <div><i></i></div></button>
+                        <span>$23,00</span>
+                    </div>
+                </div>
+
+                <div>
+                    
+                    <div>
+                    <span>Clear Treatment Essence</span>
+                    <span>Skin Care</span>
+                    </div>
+                    <span>60ML</span>
+
+                </div>
+            </div>
+
+            <div>
+                 <div>
+                    
+                    <div>
+                    <button><i></i></button>
+                    </div>
+                    <div>
+                        <button><span>buy now</span> <div><i></i></div></button>
+                        <span>$23,00</span>
+                    </div>
+                </div>
+
+                <div>
+                    
+                    <div>
+                    <span>Clear Treatment Essence</span>
+                    <span>Skin Care</span>
+                    </div>
+                    <span>60ML</span>
+
+                </div>
+            </div>
+            <div>
+                 <div>
+                    
+                    <div>
+                    <button><i></i></button>
+                    </div>
+                    <div>
+                        <button><span>buy now</span> <div><i></i></div></button>
+                        <span>$23,00</span>
+                    </div>
+                </div>
+
+                <div>
+                    
+                    <div>
+                    <span>Clear Treatment Essence</span>
+                    <span>Skin Care</span>
+                    </div>
+                    <span>60ML</span>
+
+                </div>
+            </div>
+
+            <div>
+                 <div>
+                    
+                    <div>
+                    <button><i></i></button>
+                    </div>
+                    <div>
+                        <button><span>buy now</span> <div><i></i></div></button>
+                        <span>$23,00</span>
+                    </div>
+                </div>
+
+                <div>
+                    
+                    <div>
+                    <span>Clear Treatment Essence</span>
+                    <span>Skin Care</span>
+                    </div>
+                    <span>60ML</span>
+
+                </div>
+            </div>
+
+            <div>
+                 <div>
+                    
+                    <div>
+                    <button><i></i></button>
+                    </div>
+                    <div>
+                        <button><span>buy now</span> <div><i></i></div></button>
+                        <span>$23,00</span>
+                    </div>
+                </div>
+
+                <div>
+                    
+                    <div>
+                    <span>Clear Treatment Essence</span>
+                    <span>Skin Care</span>
+                    </div>
+                    <span>60ML</span>
+
+                </div>
+            </div>
+            <div>
+                 <div>
+                    
+                    <div>
+                    <button><i></i></button>
+                    </div>
+                    <div>
+                        <button><span>buy now</span> <div><i></i></div></button>
+                        <span>$23,00</span>
+                    </div>
+                </div>
+
+                <div>
+                    
+                    <div>
+                    <span>Clear Treatment Essence</span>
+                    <span>Skin Care</span>
+                    </div>
+                    <span>60ML</span>
+
+                </div>
+            </div>
+            <div>
+                 <div>
+                    
+                    <div>
+                    <button><i></i></button>
+                    </div>
+                    <div>
+                        <button><span>buy now</span> <div><i></i></div></button>
+                        <span>$23,00</span>
+                    </div>
+                </div>
+
+                <div>
+                    
+                    <div>
+                    <span>Clear Treatment Essence</span>
+                    <span>Skin Care</span>
+                    </div>
+                    <span>60ML</span>
+
+                </div>
+            </div>
+            <div>
+                 <div>
+                    
+                    <div>
+                    <button><i></i></button>
+                    </div>
+                    <div>
+                        <button><span>buy now</span> <div><i></i></div></button>
+                        <span>$23,00</span>
+                    </div>
+                </div>
+
+                <div>
+                    
+                    <div>
+                    <span>Clear Treatment Essence</span>
+                    <span>Skin Care</span>
+                    </div>
+                    <span>60ML</span>
+
+                </div>
+            </div>
+            <div>
+                 <div>
+                    
+                    <div>
+                    <button><i></i></button>
+                    </div>
+                    <div>
+                        <button><span>buy now</span> <div><i></i></div></button>
+                        <span>$23,00</span>
+                    </div>
+                </div>
+
+                <div>
+                    
+                    <div>
+                    <span>Clear Treatment Essence</span>
+                    <span>Skin Care</span>
+                    </div>
+                    <span>60ML</span>
+
+                </div>
+            </div>
+            <div>
+                 <div>
+                    
+                    <div>
+                    <button><i></i></button>
+                    </div>
+                    <div>
+                        <button><span>buy now</span> <div><i></i></div></button>
+                        <span>$23,00</span>
+                    </div>
+                </div>
+
+                <div>
+                    
+                    <div>
+                    <span>Clear Treatment Essence</span>
+                    <span>Skin Care</span>
+                    </div>
+                    <span>60ML</span>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        
+        <div>
+            <span>GALERY</span>
+        <span>Our Most Loved Products: Discover Sekkiese's Best-Sellers</span>
+        <button >Explore gallery</button>
+
+        </div>
+    </section>
+</main>
+
+
+
+<footer>
+
+    <div>
+        <span>Sekkisie</span>
+
+    <div>
+        <span>Join our newsletter to stay up to date</span>
+        <div>
+            <input type="text" name="" id="" placeholder="Email adress">
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+
+    </div>
+
+    <div>
+        <div>
+            <span>Navigations</span>
+
+            <a href="#about">About</a>
+            <a href="#story">story</a>
+            <a href="#products">products</a>
+            <a href="#news">news</a>
+            <a href="#shop">shop</a>
+            <a href="#testimonial">testimonial</a>
+            <a href="#cases">cases</a>
+        </div>
+
+        <div>
+            <span>Collections</span>
+
+            <a href="#">Sekkiese Classic</a>
+            <a href="#">Sekkiese Supreme</a>
+            <a href="#">Sekkiese Excellent</a>
+            <a href="#">Clear Wellness</a>
+            <a href="#">Gifts</a>
+            <a href="#">View All</a>
+        </div>
+
+        <div>
+            <span>Category</span>
+
+            <a href="#">Cream + Moisturizer</a>
+            <a href="#">Emulsion + Lotion</a>
+            <a href="#">Essence + Seru</a>
+            <a href="#">Cleansers</a>
+            <a href="#">Masks</a>
+            <a href="#">Eye Care</a>
+        </div>
+
+        <div>
+            <span>Skin Type</span>
+
+            <a href="#">Normal</a>
+            <a href="#">Combination</a>
+            <a href="#">Essences + Serum</a>
+            <a href="#">DRY</a>
+            <a href="#">Oily</a>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <a href="">Privacy Policy</a>
+            <a href="">Term Of Service</a>
+        </div>
+
+        <a href="">©️ 2023 Lumin.  All rights reserved.</a>
+    </div>
+
+</footer>
+
+    
+</body>
+</html>
